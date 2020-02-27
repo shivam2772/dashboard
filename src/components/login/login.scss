@@ -1,24 +1,69 @@
 .login {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  @media only screen and(min-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
   min-height: 100vh;
+  flex-direction: column;
 
   &__container {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 90%;
+    @media only screen and(min-width: 768px) {
+      width: 33%;
+      box-shadow: 0 1px 4px gray;
+      border: 1px solid lightgray;
+    }
     padding: 16px;
-    border: 1px solid lightgray;
     border-radius: 3px;
-    box-shadow: 0 1px 4px gray;
+
+    &__password {
+      display: flex;
+      .show-btn {
+        flex: 0 0 auto;
+        background: lightgray;
+        color: black;
+        margin-top: 8px;
+        border: 1px solid lightgray;
+        font-size: 12px;
+        padding: 4px;
+        border-left: 0px;
+      }
+      .password {
+        flex: 1 1 auto;
+        border-right: 0px;
+      }
+    }
   }
 
   input {
     padding: 10px;
     border-radius: 3px;
     border: 1px solid lightgray;
+    margin-top: 8px;
+  }
+
+  .error-text {
+    font-size: 12px;
+    color: #e88585;
+    text-align: left;
+  }
+
+  .error-block {
+    padding: 16px;
     margin-bottom: 8px;
+    border: 1px solid #e88585;
+    width: auto;
+    margin: 0 16px;
+    @media only screen and(min-width: 768px) {
+      width: 33%;
+      margin-bottom: 8px;
+    }
+    border-radius: 3px;
+    background: #efcbcb;
+    color: #a96262;
   }
 
   button {
@@ -29,5 +74,7 @@
     color: white;
     font-size: 16px;
     cursor: pointer;
+    margin-top: 16px;
+    border: none;
   }
 }

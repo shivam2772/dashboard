@@ -1,13 +1,16 @@
 import React from 'react';
-import Login from './components/login';
-import Dashboard from './components/dasboard';
+import { Provider } from 'react-redux';
+import { store } from './store/createStore';
+import Router from './router';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Dashboard />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Router />
+      </div>
+    </Provider>
   );
 }
 
