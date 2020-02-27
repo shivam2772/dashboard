@@ -1,0 +1,33 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 16px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px gray;
+  }
+
+  input {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    margin-bottom: 8px;
+  }
+
+  button {
+    padding: 8px;
+    background: #2ebc4f;
+    border-color: #2ebc4f;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}

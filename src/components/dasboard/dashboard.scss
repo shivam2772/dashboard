@@ -1,0 +1,17 @@
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.dashboard {
+  padding: 20px;
+}
